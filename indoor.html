@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Medallions, Fireplaces & Interior Stonework | Venice Tile &amp; Marble • Interactive Slider Gallery</title>
+  <meta name="description" content="Intricate waterjet-cut natural stone floor medallions, bookmatched quartzite and Nero Marquina marble feature walls, soapstone and travertine fireplace surrounds, glass mosaic carpets, and LED-backlit crystal installations." />
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="indoor">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Venice Tile and Marble Home">
+        <img src="assets/logo.jpg" alt="Venice Tile &amp; Marble Logo" class="brand-logo-img" />
+        <div class="brand-text">
+          <span class="brand-name">Venice Tile <span class="amp">&amp;</span> Marble</span>
+          <span class="brand-tagline">Est. June 1987 • San Jose, CA</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="rare-precious-stone.html" class="nav-link">Rare Precious Stone <span class="nav-count">19</span></a>
+        <a href="kitchen.html" class="nav-link">Kitchen <span class="nav-count">51</span></a>
+        <a href="bathroom.html" class="nav-link">Bathroom <span class="nav-count">135</span></a>
+        <a href="indoor.html" class="nav-link active">Indoor <span class="nav-count">142</span></a>
+        <a href="outdoor.html" class="nav-link">Outdoor <span class="nav-count">250</span></a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle color theme">☀</button>
+        <a href="tel:4086908510" class="btn btn-gold header-cta-btn">☏ (408) 690-8510</a>
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- COMPACT COLLECTION HEADER -->
+    <section class="page-hero-compact">
+      <div class="container">
+        <div class="page-hero-top">
+          <div>
+            <span class="eyebrow">✦ Bespoke Interior Stonework & Architectural Surfaces • 142 Slides</span>
+            <h1 class="section-title">Custom Medallions, Fireplaces & Interior Stonework</h1>
+            <p class="section-subtitle" style="margin-top: 0.5rem;">
+              Intricate waterjet-cut natural stone floor medallions, bookmatched quartzite and Nero Marquina marble feature walls, soapstone and travertine fireplace surrounds, glass mosaic carpets, and LED-backlit crystal installations.
+            </p>
+            <div class="feature-pills" style="margin-top: 1rem;">
+              <span class="feature-pill">✦ Waterjet Stone Medallions</span>
+            <span class="feature-pill">✦ Bookmatched Quartzite Walls</span>
+            <span class="feature-pill">✦ Soapstone & Travertine Fireplaces</span>
+            <span class="feature-pill">✦ LED-Lit Crystal White</span>
+            <span class="feature-pill">✦ Custom Curvature Flooring</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-gold">Request Slab Quote</a>
+            <a href="tel:4086908510" class="btn btn-outline">☏ (408) 690-8510</a>
+          </div>
+        </div>
+
+        <!-- Collection Switcher -->
+        <div class="category-switcher-bar" aria-label="Switch Gallery Collection">
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); align-self: center; margin-right: 0.35rem;">COLLECTIONS:</span>
+          <a href="rare-precious-stone.html" class="cat-pill">Rare Precious Stone (19)</a>
+          <a href="kitchen.html" class="cat-pill">Kitchen (51)</a>
+          <a href="bathroom.html" class="cat-pill">Bathroom (135)</a>
+          <a href="indoor.html" class="cat-pill active">Indoor (142)</a>
+          <a href="outdoor.html" class="cat-pill">Outdoor (250)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIMARY CINEMA STAGE SLIDER + SYNCHRONIZED THUMBNAIL FILMSTRIP -->
+    <section class="cinema-slider-section" aria-label="Interactive Image Slider">
+      <div class="container">
+
+        <!-- Interactive Slider Toolbar -->
+        <div class="cinema-toolbar">
+          <div class="toolbar-group">
+            <button type="button" class="tool-btn active" id="filter-all-btn">All Slides (142)</button>
+            <button type="button" class="tool-btn" id="filter-featured-btn">Featured Highlights</button>
+          </div>
+
+          <div class="toolbar-group">
+            <button type="button" class="tool-btn" id="slider-play-btn">▶ Play Slideshow</button>
+            <select id="slider-speed-select" class="speed-select" aria-label="Slideshow Speed">
+              <option value="3000">Fast (3s)</option>
+              <option value="4500" selected>Normal (4.5s)</option>
+              <option value="7000">Relaxed (7s)</option>
+            </select>
+            <button type="button" class="tool-btn" id="slider-fit-btn" title="Toggle between full slab view and edge-to-edge fill">⛶ Fill Stage</button>
+            <button type="button" class="tool-btn" id="slider-fullscreen-btn" title="View slider in fullscreen mode">⛶ Fullscreen Stage</button>
+          </div>
+        </div>
+
+        <!-- Main Cinema Viewport -->
+        <div class="cinema-stage-wrapper" id="cinema-stage-wrapper">
+          <div class="cinema-ambient-bg" id="cinema-ambient-bg"></div>
+          <div class="cinema-autoplay-bar">
+            <div class="cinema-autoplay-progress" id="cinema-autoplay-progress"></div>
+          </div>
+
+          <button type="button" class="cinema-arrow prev" id="cinema-prev-btn" aria-label="Previous Slide">←</button>
+          <button type="button" class="cinema-arrow next" id="cinema-next-btn" aria-label="Next Slide">→</button>
+
+          <div class="cinema-slide-viewport">
+            <img id="cinema-main-img" class="cinema-main-img" src="" alt="Custom Medallions, Fireplaces & Interior Stonework" />
+          </div>
+
+          <div class="cinema-info-bar">
+            <div>
+              <span class="cinema-counter-pill" id="cinema-counter-pill">SLIDE 01 / 142</span>
+              <h2 class="cinema-slide-title" id="cinema-slide-title">Loading Collection...</h2>
+              <p class="cinema-slide-subtitle" id="cinema-slide-subtitle"></p>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.74rem; color: rgba(255,255,255,0.6);">
+              Use ← → Arrow Keys or Swipe to Slide
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick-Jump Range Scrubber -->
+        <div class="cinema-scrubber-row">
+          <div class="toolbar-group">
+            <button type="button" class="tool-btn" id="step-first-btn" title="First Slide">|◀ First</button>
+            <button type="button" class="tool-btn" id="step-back10-btn" title="Back 10 Slides">-10</button>
+          </div>
+          <input type="range" id="cinema-range-input" class="cinema-range" min="1" max="142" value="1" aria-label="Jump to slide number" />
+          <span class="scrubber-label" id="scrubber-pos-text">1 of 142</span>
+          <div class="toolbar-group">
+            <button type="button" class="tool-btn" id="step-fwd10-btn" title="Forward 10 Slides">+10</button>
+            <button type="button" class="tool-btn" id="step-last-btn" title="Last Slide">Last ▶|</button>
+          </div>
+        </div>
+
+        <!-- Synchronized Thumbnail Filmstrip Slider -->
+        <div class="thumb-filmstrip-container" aria-label="Thumbnail Filmstrip Slider">
+          <button type="button" class="filmstrip-scroll-btn left" id="thumb-scroll-left" aria-label="Scroll thumbnails left">‹</button>
+          <div class="thumb-strip" id="thumb-strip"></div>
+          <button type="button" class="filmstrip-scroll-btn right" id="thumb-scroll-right" aria-label="Scroll thumbnails right">›</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECONDARY MULTI-CARD CURATED SPOTLIGHT SLIDER -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Curated Highlights Carousel</span>
+            <h2 class="section-title">Featured Waterjet Medallions, Fireplaces & Feature Walls Slider</h2>
+            <p class="section-subtitle" style="margin-top: 0.4rem;">
+              Explore our signature interior commissions across Silicon Valley and Northern California estates.
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.6rem;">
+            <button type="button" class="slider-nav-btn" id="spotlight-prev-btn" aria-label="Previous Cards">←</button>
+            <button type="button" class="slider-nav-btn" id="spotlight-next-btn" aria-label="Next Cards">→</button>
+          </div>
+        </div>
+
+        <div class="multi-slider-wrapper">
+          <div class="multi-slider-track" id="spotlight-slider-track"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTATION CTA BANNER -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-info-card highlight-phone" style="justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 2.5rem;">
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.6rem;">San Jose Fabrication Studio &amp; Showroom</span>
+            <h2 class="section-title" style="font-size: 2.1rem;">Inspired by Our Indoor Collection?</h2>
+            <p style="color: var(--text-secondary); max-width: 56ch; margin-top: 0.4rem;">
+              Visit us at 1721 Junction Avenue, Suite E in San Jose or call us directly to discuss slab availability, edge profiles, and installation timelines.
+            </p>
+          </div>
+          <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+            <a href="tel:4086908510" class="btn btn-gold">☏ Call (408) 690-8510</a>
+            <a href="contact.html" class="btn btn-outline">Schedule Consultation →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+            <img src="assets/logo.jpg" alt="Venice Tile &amp; Marble Logo" class="brand-logo-img" />
+            <div class="brand-text">
+              <span class="brand-name">Venice Tile <span class="amp">&amp;</span> Marble</span>
+              <span class="brand-tagline">Est. June 1987 • San Jose, CA</span>
+            </div>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; max-width: 38ch;">
+            Over 35 years of craftsmanship in natural stone, rare semi-precious slabs, quartz, porcelain, custom medallions, and luxury outdoor living across Northern California.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Interactive Galleries</h4>
+          <ul class="footer-links">
+            <li><a href="rare-precious-stone.html">Rare Precious Stone (19 Slides)</a></li>
+            <li><a href="kitchen.html">Kitchen Galleries (51 Slides)</a></li>
+            <li><a href="bathroom.html">Bathroom &amp; Spa (135 Slides)</a></li>
+            <li><a href="indoor.html">Indoor Stonework (142 Slides)</a></li>
+            <li><a href="outdoor.html">Outdoor Living (250 Slides)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="rare-precious-stone.html">LED-Backlit Agate &amp; Quartz</a></li>
+            <li><a href="kitchen.html">Bookmatched Waterfall Islands</a></li>
+            <li><a href="indoor.html">Waterjet Marble Medallions</a></li>
+            <li><a href="bathroom.html">Custom Porcelain &amp; Stone Sinks</a></li>
+            <li><a href="outdoor.html">Outdoor Kitchens, Pavers &amp; Pools</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Direct Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:4086908510" style="color: var(--accent-gold); font-weight: 700; font-size: 1.05rem;">(408) 690-8510</a></li>
+            <li><a href="mailto:VeniceTile111@gmail.com">VeniceTile111@gmail.com</a></li>
+            <li style="color: var(--text-secondary); font-size: 0.86rem;">
+              1721 Junction Avenue, Suite E<br />San Jose, CA 95112
+            </li>
+            <li style="margin-top: 0.5rem;"><a href="contact.html" style="color: var(--accent-gold);">Request a Consultation →</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 1987–2026 Venice Tile &amp; Marble. All Rights Reserved.</span>
+        <span>1721 Junction Avenue, Suite E, San Jose, CA 95112 • (408) 690-8510</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/gallery-data.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
