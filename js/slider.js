@@ -539,6 +539,28 @@
         });
       }
 
+      // Touch swipe support on Home Hero Slider
+      let heroTouchX = 0;
+      heroContainer.addEventListener(
+        'touchstart',
+        (e) => {
+          heroTouchX = e.changedTouches[0].screenX;
+        },
+        { passive: true }
+      );
+      heroContainer.addEventListener(
+        'touchend',
+        (e) => {
+          const dx = e.changedTouches[0].screenX - heroTouchX;
+          if (Math.abs(dx) > 40) {
+            if (dx < 0) setHeroSlide(heroIdx + 1);
+            else setHeroSlide(heroIdx - 1);
+            restartHeroTimer();
+          }
+        },
+        { passive: true }
+      );
+
       restartHeroTimer();
     }
 

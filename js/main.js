@@ -32,10 +32,36 @@
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const mainNav = document.getElementById('main-nav');
     if (mobileBtn && mainNav) {
-      mobileBtn.addEventListener('click', () => {
+      // Ensure mobile call CTA button exists inside the drawer on all pages
+      if (!mainNav.querySelector('.mobile-nav-cta')) {
+        const callBtn = document.createElement('a');
+        callBtn.href = 'tel:4086908510';
+        callBtn.className = 'btn btn-gold mobile-nav-cta';
+        callBtn.textContent = '☏ Call (408) 690-8510';
+        mainNav.appendChild(callBtn);
+      }
+
+      function closeMobileNav() {
+        mainNav.classList.remove('open');
+        mobileBtn.setAttribute('aria-expanded', 'false');
+        mobileBtn.innerHTML = '☰';
+      }
+
+      mobileBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
         const isOpen = mainNav.classList.toggle('open');
         mobileBtn.setAttribute('aria-expanded', String(isOpen));
         mobileBtn.innerHTML = isOpen ? '✕' : '☰';
+      });
+
+      mainNav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', closeMobileNav);
+      });
+
+      document.addEventListener('click', (e) => {
+        if (mainNav.classList.contains('open') && !mainNav.contains(e.target) && e.target !== mobileBtn) {
+          closeMobileNav();
+        }
       });
     }
 
